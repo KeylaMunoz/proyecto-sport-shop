@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="../images/logo-transp.png" type="image/x-icon">
+
+<!-- link bootstraps css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header>
+        <!-- NAVEGADOR -->
+        <!-- menu hamburguesa Boostraps -->
+        <section>
+            <div>
+                <input type="checkbox" id="toggle" class="checkbox">
+                <label for="toggle" class="hamburguesa"><img src="../images/menu-hamburguesa.jpg" alt="menu hamburguesa" class="img-hamburguesa"></label>
+                <nav class="menu">
+                    <a href="../index.html"> <img src="../images/logo-3.png" class="logo" class="boton-logo" alt="Logo"></a></li>
+                    <ul class="navegador">
+                        <li>
+                            <a href="../index.html" class="boton-nav">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./hombre.html" class="boton-nav">Hombre</a>
+                        </li>
+                        <li>
+                            <a href="./mujer.html" class="boton-nav">Mujer</a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html" class="boton-nav">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#" class="boton-nav">Contáctanos</a>
+                        </li>
+                    </ul>
+                </nav>
+                    <form action="#" id="busqueda" method="post" class="">
+                        <input class="buscador" type="search" placeholder="¿Que estás buscando?" id="busqueda">
+                    </form>
+                    <a href="./favoritos.html"><img src="../images/heart-removebg-preview.png" class="boton-fav" alt="Favorito" ></a></li>
+                    <a href="./carrito.html"><img src="../images/carrito-removebg-preview.png" class="boton-carr" alt="Carrito"></a></li>
+            </div>
+        </section>
+    </header>
+
+    <!-- MAIN CONTACTO -->
+    <main>
+        <!-- formulario Bootstraps -->
+        <section class="formulario">
+            <div class="info-formulario">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="validationDefault01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control boton-formulario" id="validationDefault01" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control boton-formulario" id="validationDefault02" value="" required>
+                    </div>
+
+                    <div class="correo">
+                        <label for="validationDefault03" class="form-label correo ">Correo Electrónico</label>
+                        <input type="email" class="form-control boton-formulario" id="validationDefault03 " required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault04" class="form-label">Provincia</label>
+                        <select class="form-select boton-formulario" id="validationDefault04" required>
+                            <option>Buenos Aires</option>
+                            <option>Catamarca</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>corrientes</option>
+                            <option>Entre Ríos </option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>más...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control boton-formulario" id="validationDefault05" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Déjanos tu mensaje aquí:</label>
+                        <br>
+                        <textarea id="mensaje" name="mensaje" rows="" cols=""></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="text" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">Grabar datos personales.</label>
+                        </div>
+                    </div>
+                        <div class="col-12">
+                        <button class="btn btn-primary enviar-formulario" type="submit">Enviar formulario</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <ul class="footer">
+                <li>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" class="margin" target="_blank"><img src="../images/whatsapp.png" alt="link whatsapp" class="img-footer"></a></li>
+                <li>
+                    <a href="https://www.instagram.com/" class="margin" target="_blank"><img src="../images/instagram.png" alt="link instagram" class="img-footer"></a></li>
+                <li>
+                    <a href="http://www.facebook.com" class="margin" target="_blank"><img src="../images/facebook2.png" alt="link facebook" class="img-footer"></a></li>
+                <li>
+                    <a href="#" class="margin"><img src="../images/llamada.png" alt="link llamadas" class="img-footer"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- link bootstraps js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

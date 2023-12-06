@@ -1,0 +1,665 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu:wght@300&display=swap');
+
+
+body {
+    background-image: url(../images/background2.png);
+    /* overflow: hidden; */
+    font-family: 'Audiowide', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+    /* ---- NAVEGADOR ---- */
+
+    header section div{
+        background-color: rgba(0, 0, 0, 0.692);
+        width: 100%;
+        height: 3.9vw;
+        position: fixed;
+        z-index: 4;
+    }
+    .logo{
+        position: fixed;
+        width: 6vw;
+        left:1vw;
+        top: 0.5vw;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    /* menu hamburguesa */
+    .hamburguesa {
+        display: none;
+    }
+    .checkbox {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+        opacity: 0;
+    }
+    .navegador {
+        display: flex;
+        position: absolute;
+        z-index: 5;
+        list-style: none;
+        margin-left: 6vw;
+        margin-top: 0.7vw;
+    }
+    .boton-nav {
+        background-color: #2020;
+        text-decoration: none;
+        padding: 0.5vw 1vw 0.5vw 1vw;
+        font-size: medium;
+        color: #FFFFFF;
+        margin-top: 3vw;
+    }
+    .boton-nav:hover {
+        border-radius: 4px;
+        box-shadow: 0 0 10px 2px #FFFFFF;
+    }
+
+    /* buscador */
+    .buscador {
+        background-color:#FFFFFF;
+        color: black;
+        width: 25vw;
+        height: 3vw;
+        display: flex;
+        justify-content: center;
+        border: none;
+        text-align: center;
+        position: fixed;
+        top: 0.5vw;
+        font-size: medium;
+        border-radius: 4px;
+        right: 15%;
+    }
+    .buscador:hover {
+        box-shadow: 0 0 10px 2px #FFFFFF;
+    }
+
+    /* favorito y carrito */
+    .boton-carr {
+        width: 3vw;
+        position: fixed;
+        right: 4vw;
+        top: 0.5vw;
+    }
+    .boton-fav {
+        width: 3vw;
+        position: fixed;
+        right: 8vw;
+        top: 0.5vw;
+    }
+
+    /* ---- MAIN INDEX ---- */
+    /* Carrusel*/
+    .contenedor-carrusel{
+        width: 100vw;
+        top: 30vh;
+    }
+    .carrusel {
+        position: relative;
+        z-index: 2;
+    }
+
+    /*CARDS*/
+    .tamaño-img{
+        width: 16vw;
+    }
+    .contenedor-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5vw 0vw;
+        align-items: center;
+        justify-items: center;
+        padding: 5vw;
+        grid-template-areas:
+        "hijo1 hijo2 hijo3 hijo4"
+        "hijo5 hijo6 hijo7 hijo8";
+    }
+    #hijo1 {
+        grid-area: hijo1;
+    }
+    #hijo2 {
+        grid-area: hijo2;
+    }
+    #hijo3 {
+        grid-area: hijo3;
+    }
+    #hijo4 {
+        grid-area: hijo4;
+    }
+    #hijo5 {
+        grid-area: hijo5;
+    }
+    #hijo6 {
+        grid-area: hijo6;
+    }
+    #hijo7 {
+        grid-area: hijo7;
+    }
+    #hijo8 {
+        grid-area: hijo8;
+    }
+    .ropa-card {
+        background-color: #FFFFFF;
+        width: 16vw;
+        height: 25vw;
+        border-radius: 4%;
+        overflow: hidden;
+        flex-wrap: wrap;
+        text-align: center;
+        cursor: pointer;
+    }
+    .ropa-card:hover {
+        box-shadow: 0 0 10px 2px #FFFFFF
+    }
+    .boton-corazon {
+        background-color: transparent;
+        border: none;
+        color: none;
+        font-size: 4vw;
+        cursor: pointer;
+        position: relative;
+        bottom: 17vw;
+        left: 6vw;
+    }
+    .boton-corazon:focus {
+        color: #cc2406;
+    }
+
+    /* informacion de cards */
+    .info-card{
+        position: relative;
+        bottom: 5.5vw;
+    }
+    .nombre-producto {
+        font-weight: 100;
+        font-size: 1.3vw;
+        margin: 0;
+    }
+    .precio {
+        font-weight: 400;
+        color: #202020;
+        font-size: 2vw;
+        margin: 0;
+    }
+    .agregar-carrito {
+        position: relative;
+        text-decoration: none;
+        font-size: 1.3vw;
+        color: #F27405;
+        border: 1.5px solid #F27405;
+        border-radius: 5px;
+        padding: 0.5vw;
+    }
+    .agregar-carrito:hover {
+        box-shadow: 0 0 5px 2px #F27405;
+        font-weight: 600;
+    }
+
+    /* ---- MAIN NOSOTROS ---- */
+
+    .contenedor-nosotros{
+        display:flex;
+        position: relative;
+        padding: 5.2vw 7vw 0.2vw 7vw;
+    }
+    .nosotros {
+        background-color: rgba(0, 0, 0, 0.692);
+        height: 52%;
+        width: 100%;
+        padding: 3vw;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        line-height: 2vw;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0vw;
+        grid-template-areas: 
+        "info1 info3"
+        "info2 info2";
+    }
+    .info-nosotros{
+        font-size: 1.5vw;
+        position: relative;
+        color: #FFFFFF;
+        width: 40vw;
+        grid-area: info1;
+        
+    }
+    .img-nosotros{
+        position: relative;
+        width: 20vw;
+        box-shadow: 19px 20px 12px -1px rgba(0,0,0,1);
+        -webkit-box-shadow: 19px 20px 12px -1px rgba(0,0,0,1);
+        -moz-box-shadow: 19px 20px 12px -1px rgba(0,0,0,1);
+        grid-area: info3;
+    }
+    .ubicacion{
+        width: 70vw;
+        font-size: 1.7vw;
+        color: #FFFFFF;
+        position: relative;
+        grid-area: info2;
+    }
+    .mapa {
+        width: 65vw;
+        height: 15vw;
+        border-radius: 10px;
+    }
+    
+    
+    /* ---- MAIN CONTACTO ---- */
+    
+    .formulario {
+        display:flex;
+        position: relative;
+        padding: 5.2vw 7vw 0.2vw 7vw;
+    }   
+    .info-formulario {
+        background-color: rgba(0, 0, 0, 0.692);
+        color: #FFFFFF;
+        font-size: large;
+        border-radius: 10px;
+        width: 100%;
+        height: 52%;
+        padding: 1vw;
+    }
+    .correo {
+        display: block;
+        width: 27vw;
+    }    
+    .boton-formulario:hover{
+        box-shadow: 0 0 5px 2px #F27405;
+    }
+    #mensaje {
+        border-radius: 10px;
+        font-size: large;
+        width: 50vw;
+        height: 8vw;
+    }
+    .enviar-formulario {
+        background-color: #F27405;
+        border-color: #F27405;
+    }
+    .enviar-formulario:hover {
+        background-color: #F27405;
+        border-color: #F27405;
+    }
+
+    /* ---- MAIN CARRITO ---- */
+    .carrito {
+        display: flex;
+        position: relative;
+        padding: 5.2vw 7vw 0.2vw 7vw;
+    }
+    .contenido-carrito {
+        background-color: rgba(0, 0, 0, 0.692);
+        color: #FFFFFF;
+        font-size: 170%;
+        border-radius: 10px;
+        width: 100%;
+        height: 36%;
+        padding: 1vw;
+        text-align: center;
+    }
+    p {
+        margin: 0;
+    }
+    .img-carrito-vacio {
+        width: 35vw;
+    }
+
+    /* ---- MAIN FAVORITO ---- */
+    .favorito {
+        display: flex;
+        position: relative;
+        padding: 5.2vw 7vw 0.2vw 7vw;
+    }
+    .contenido-favorito {
+        background-color: rgba(0, 0, 0, 0.692);
+        color: #FFFFFF;
+        font-size: 170%;
+        border-radius: 10px;
+        width: 100%;
+        height: 37%;
+        padding: 1vw;
+        text-align: center;
+    }
+    .img-favorito {
+        width: 30vw;
+        padding-right: 5vw;
+    }
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        background-color: #f27405bb;
+        width: 100%;
+        height: 4vw;
+        list-style: none;
+        padding: 0;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+    .img-footer{
+        width: 3vw;
+    }
+    .img-footer:hover{
+        border-radius: 4px;
+        border-color: #202020;
+    }
+    .margin{
+        margin: 0vw 3vw 0vw 3vw;
+        padding: 0;
+    }
+
+
+/* --- PANTALLA TABLET --- */
+@media screen and (max-width: 768px) {
+   
+    /* NAVEGADOR */
+    header section div {
+        height: 35px;
+    }
+    .logo {
+        width: 50px;
+        left:10px;
+        top: 6px;
+    }
+    .hamburguesa {
+        display: inline-block;
+        position: relative;
+        z-index: 4;
+    }
+    .img-hamburguesa{
+        width: 27px;
+        margin-top: 3px;
+        margin-left: 2vw;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+    }
+    #toggle:checked ~ .menu {
+        display: block;
+    }
+    .logo {
+        display: none;
+    }
+    .navegador {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 100%;
+        background-color: #202020b1;
+        margin-top: 5px;
+    }
+    .boton-nav {
+        padding-right: 100%;
+    }
+    .boton-nav:hover {
+        background-color: #202020b1;
+        padding-right: 100vw;
+        border-radius: 0;
+        padding-left: 5px;
+    }
+    .buscador {
+        width: 60%;
+        height: 27px;
+        top: 4px;
+        left: 18%;
+    }
+    .boton-carr{
+        width: 25px;
+        right: 3%;
+        top: 5px;
+    }
+    .boton-fav {
+        width: 25px;
+        right: 9%;
+        top: 5px;
+    }
+
+/* CARRUSEL */
+    .carrusel {
+        position: relative;
+        z-index: 2;
+        padding-top: 35px;
+    }
+    .boton-carrusel {
+        position: relative;
+        z-index: 3;
+    }
+
+/* CARDS */
+    .contenedor-cards {
+        padding-top: 8vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "hijo1 hijo2"
+        "hijo3 hijo4"
+        "hijo5 hijo6"
+        "hijo7 hijo8";
+    }
+    .ropa-card {
+        width: 31vw;
+        height: 46vw;
+    }
+    .tamaño-img{
+        width: 31vw;
+    }
+    .info-card{
+        bottom: 12vw;
+    }
+    .nombre-producto {
+        font-size: 2.5vw;
+    }
+    .precio {
+        font-weight: 400;
+        font-size: 4vw;
+    }
+    .agregar-carrito {
+        font-size: 2.5vw;
+        padding: 0.5vw;
+    }
+    .boton-corazon {
+        font-size: 8vw;
+        bottom: 33vw;
+        left: 11vw;
+    }
+
+    /* ---- MAIN NOSOTROS ---- */
+
+    .contenedor-nosotros{
+        padding: 8vw 7vw 2vw 7vw;
+    }
+    .nosotros {
+        height: 78%;
+        width: 100%;
+        padding: 3vw;
+    }
+
+    /* MAIN CONTACTO */
+    .formulario {
+        padding: 8vw 7vw 0.2vw 7vw;     
+    }   
+    .info-formulario {
+        width: 100%;
+        height: 145%;
+        padding: 3vw;
+    }
+    .correo {
+        width: 60vw;
+    }
+    #mensaje {
+        height: 18vw;
+    }
+
+    /* MAIN CARRITO */
+    .carrito {
+        padding:  8vw 7vw 0.2vw 7vw;;
+    }
+    .contenido-carrito {
+        height: 34%;
+        font-size: 130%;
+    }
+    .img-carrito-vacio{
+        width: 30vw;
+    }
+
+     /* MAIN FAVORITO */
+     .favorito {
+        padding:  8vw 7vw 0.2vw 7vw;;
+    }
+    .contenido-favorito {
+        height: 34%;
+        font-size: 120%;
+        padding:3vw 0vw;
+    }
+    .img-favorito{
+        width: 25vw;
+    }
+    /* FOOTER */
+        .footer {
+            height: 5vw;
+        }
+        .img-footer{
+            width: 5vw;
+        }
+}
+
+/* PANTALLA MOVILE */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    /* CARDS */
+    .contenedor-cards {
+    padding-top: 12vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "hijo1"
+        "hijo2"
+        "hijo3"
+        "hijo4"
+        "hijo5"
+        "hijo6"
+        "hijo7"
+        "hijo8";
+    }
+    .ropa-card {
+        width: 50vw;
+        height: 70vw;
+    }
+    .tamaño-img{
+        width: 50vw;
+    }
+    .info-card{
+        bottom: 18.5vw;
+    }
+    .nombre-producto {
+        font-size: 3.5vw;
+    }
+    .precio {
+        font-weight: 400;
+        font-size: 5vw;
+    }
+    .agregar-carrito {
+        font-size: 4vw;
+    }
+    .boton-corazon {
+        font-size: 12vw;
+        bottom: 51vw;
+        left: 15vw;
+    }
+    .footer {
+        height: 6vw;
+    }
+    .img-footer{
+        width: 6vw;
+    }
+
+     /* MAIN NOSOTROS */
+
+     .contenedor-nosotros{
+        padding: 15vw 12vw 3vw 12vw;
+    }
+    .nosotros {
+        height: 150%;
+        width: 100%;
+        padding: 3vw;
+        grid-template-columns: 1fr;
+        gap: 3vw 0vw;
+        grid-template-areas: 
+        "info1"
+        "info3"
+        "info2";
+    }
+    .info-nosotros {
+        width: 60vw;
+    }
+    .img-nosotros {
+        width: 40vw;
+    }
+    .ubicacion {
+        width: 60vw;
+    }
+    .mapa {
+        width: 50vw;
+    }
+
+    /* MAIN CONTACTO */
+    .formulario {
+        padding: 15vw 12vw 3vw 12vw;
+    }   
+    .info-formulario {
+        width: 100%;
+        height: 185%;
+        padding: 3vw;
+    }
+    .correo {
+        width: 75vw;
+    }
+    #mensaje {
+        height: 23vw;
+    }
+
+    /* MAIN CARRITO */
+    .carrito {
+        padding:  15vw 12vw 3vw 12vw;
+    }
+    .contenido-carrito {
+    height: 53%;
+    font-size: 120%;
+    padding: 1vw 3vw;
+    }
+    .img-carrito-vacio{
+        width: 30vw;
+    }
+
+     /* MAIN FAVORITO */
+     .favorito {
+        padding:  15vw 12vw 3vw 12vw;
+    }
+    .contenido-favorito {
+        height: 53%;
+        font-size: 130%;
+        padding: 1vw 3vw;
+    }
+    .img-favorito{
+        width: 35vw;
+    }
+}
