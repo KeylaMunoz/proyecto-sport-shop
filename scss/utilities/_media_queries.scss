@@ -1,0 +1,377 @@
+/* media queries */
+/* pantalla para tablets*/
+@media screen and (max-width: 768px) {
+    /*header*/
+    header {
+        section{
+            div{
+                #toggle:checked ~ .menu {
+                    display: block;
+                }
+                .hamburguesa{
+                    display: inline-block;
+                    position: relative;
+                    z-index: 4;
+                    .img-hamburguesa{
+                        width: 32px;
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        &:hover{
+                            box-shadow: 0 0 10px 2px nth($list: $colores, $n: 1);
+                        }
+                    }
+                }
+                .menu{
+                    display: none;
+                    a{
+                        .logo{
+                            display: none;
+                            width: 50px;
+                            left:10px;
+                            top: 6px;
+                        }
+                    }
+                    .navegador{
+                        display: block;
+                        position: absolute;
+                        z-index: 5;
+                        margin-left: 0;
+                        padding-left: 0;
+                        padding-right: 100%;
+                        background-color: nth($list: $colores, $n: 3);
+                        margin-top: 8px;
+                        li{
+                            .boton-nav{
+                                padding-right: 100%;
+                                &:hover{
+                                    background-color: nth($list: $colores, $n: 3);
+                                    padding-right: 100vw;
+                                    border-radius: 0;
+                                    padding-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .busquedas {
+                    .buscador {
+                        width: 50%;
+                        height: 32px;
+                        top: 8px;
+                        left: 23%;
+                    }
+                }
+                a{
+                    .boton-fav{
+                        width: 35px;
+                        right: 65px;
+                        top: 5px;
+                    }
+                }
+                a{
+                    .boton-carr{
+                        width: 36px;
+                        right: 25;
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main index */
+    main{
+        .carrusel{
+            div{
+                .boton-carrusel{
+                    position: relative;
+                    z-index: 3;
+                }
+            }
+        }
+        .contenedor-cards{
+            padding: 0% 5% 0% 5%;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0% 5%;
+            grid-template-areas:
+            "hijo1 hijo2 hijo3"
+            "hijo4 hijo5 hijo6"
+            "hijo7 hijo8 none";
+            .ropa-card{
+                width: 100%;
+                height: 80%;
+                .tamaño-img{
+                    width: 100%;
+                }
+                .boton-corazon{
+                    font-size: 8vw;
+                    bottom: 30vw;
+                    left: 11vw;
+                }
+                .info-card{
+                    bottom: 12vw;
+                    .nombre-producto{
+                        font-size: 2.5vw;
+                    }
+                    .precio{
+                        font-weight: 400;
+                        font-size: 4vw;
+                    }
+                    .agregar-carrito{
+                        font-size: 2.5vw;
+                        padding: 0.5vw;
+                    }
+                }
+            }
+        }
+    }
+    /* main nosotros */
+    main{
+        .contenedor-nosotros{
+            padding: 70px 60px 10px 60px;
+            .nosotros{
+                height: 78%;
+                width: 100%;
+                padding: 3vw;
+                .info-nosotros{
+                    font-size: 90%;
+                    line-height: 120%;
+                }
+                .ubicacion{
+                    padding: 3% 2% 5% 2%;
+                }
+            }
+        }
+    }
+    /* main contacto */
+    main{
+        .formulario{
+            padding: 70px 60px 10px 60px;
+            .info-formulario{
+                form{
+                    width: 100%;
+                    height: 145%;
+                    padding: 3vw;
+                    .correo{
+                        width: 60vw;
+                    }
+                    div{
+                        #mensaje{
+                            height: 18vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* main carrito */
+    main{
+        .carrito{
+            padding: 70px 60px 10px 60px;
+            .contenido-carrito{
+                height: 34%;
+                font-size: medium;
+                h1{
+                    font-size: 250%;
+                }
+                .img-carrito-vacio{
+                    width: 300px;
+                }
+            }
+        }
+    }
+    /* main favorito */
+    main{
+        .favorito{
+            padding: 70px 60px 10px 60px;
+            .contenido-favorito{
+                height: 34%;
+                font-size: medium;
+                h1{
+                    font-size: 250%;
+                }
+                .img-favorito{
+                    width: 300px;
+                }
+            }
+        }
+    }
+    /* footer */
+    footer{
+        div{
+            .footer{
+                height: 33px;
+                li{
+                    .margin{
+                        .img-footer{
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* pantalla movile */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        section{
+            div{
+                .busquedas {
+                    .buscador {
+                        width: 54%;
+                        left: 20%;
+                    }
+                }
+                a{
+                    .boton-fav{
+                        width: 32px;
+                        height: 32px;
+                        right: 35px;
+                        top: 7px;
+                    }
+                }
+                a{
+                    .boton-carr{
+                        width: 33px;
+                        height: 33px;
+                        right: 6px;
+                        top: 7px;
+                    }
+                }
+            }
+        }
+    }
+    /* main index */
+    main{
+        .contenedor-cards{
+            padding: 0% 5% 0% 5%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "hijo1 hijo2"
+            "hijo3 hijo4"
+            "hijo5 hijo6"
+            "hijo7 hijo8";
+
+            .ropa-card{
+                width: 100%;
+                height: 80%;
+                .tamaño-img{
+                    width: 100%;
+                }
+                .boton-corazon{
+                    font-size: 12vw;
+                    bottom: 45vw;
+                    left: 15vw;
+                }
+                .info-card{
+                    bottom: 18.5vw;
+                    .nombre-producto{
+                        font-size: 3.5vw;
+                    }
+                    .precio{
+                        font-weight: 400;
+                        font-size: 5vw;
+                    }
+                    .agregar-carrito{
+                        font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+    /*main mujer*/
+    main{
+        .contenedor-h-m{
+            padding-top: 50px;
+        }
+    }
+    /* main nosotros */
+    main{
+        .contenedor-nosotros{
+            padding: 15vw 12vw 3vw 12vw;
+            .nosotros{
+                height: 200%;
+                width: 100%;
+                padding: 3vw;
+                grid-template-columns: 1fr;
+                gap: 3vw 0vw;
+                grid-template-areas:
+                "info1"
+                "info3"
+                "info2";
+                .info-nosotros{
+                    width: 60vw;
+                    font-size:small;
+                    line-height: 4vw;
+                }
+                .img-nosotros{
+                    width: 40vw;
+                }
+                .ubicacion{
+                    font-size: large;
+                    line-height: 6vw;
+                    width: 60vw;
+                    .mapa{
+                        width: 50vw;
+                        height: 50vw;
+                    }
+                }
+            }
+        }
+    }
+    /* main contacto */
+    main{
+        .formulario{
+            padding: 15vw 12vw 3vw 12vw;
+            .info-formulario{
+                width: 100%;
+                height: 185%;
+                padding: 3vw;
+                form{
+                    .correo{
+                        width: 75vw;
+                    }
+                    div{
+                        #mensaje{
+                            height: 23vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* main carrito */
+    main{
+        .carrito{
+            padding: 70px 40px 10px 40px;
+            .contenido-carrito{
+                height: 53%;
+                font-size: large;
+                line-height: 40px;
+
+                .img-carrito-vacio{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    /* main favorito */
+    main{
+        .favorito{
+            padding: 70px 40px 10px 40px;
+            .contenido-favorito{
+                height: 53%;
+                .img-favorito{
+                    width: 200px;
+                }
+            }
+        }
+    }    
+}

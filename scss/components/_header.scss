@@ -1,0 +1,94 @@
+/*header*/
+header {
+    section{
+        div{
+            background-color: nth($list: $colores, $n: 3);
+            width: 100%;
+            height: 48px;
+            position: fixed;
+            z-index: 4;
+            .checkbox{
+                position: fixed;
+                width: 20px;
+                height: 20px;
+                z-index: 1;
+                opacity: 0;
+            }
+            .hamburguesa{
+            display: none;
+            }
+            .menu{
+                a{
+                    .logo{
+                        position: fixed;
+                        width: 65px;
+                        left:1vw;
+                        top: 8px;
+                        border-radius: 4px;
+                        overflow: hidden;
+                    }                   
+                }
+                .navegador{
+                    display: flex;
+                    position: absolute;
+                    z-index: 5;
+                    list-style: none;
+                    margin-left: 6%;
+                    margin-top: 12px;
+
+                    li{
+                        .boton-nav{
+                            text-decoration: none;
+                            padding: 0.5vw 1vw 0.5vw 1vw;
+                            font-size: medium;
+                            color: nth($list: $colores, $n: 1);                       
+                            &:hover{
+                                border-radius: 4px;
+                                box-shadow: 0 0 10px 2px nth($list: $colores, $n: 1);
+                            }
+                        }
+                    }
+                }
+            }
+            .busquedas{
+                .buscador{
+                    background-color: nth($list: $colores, $n: 1);
+                    color: black;
+                    width: 25%;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    border: none;
+                    text-align: center;
+                    position: fixed;
+                    top: 6px;
+                    font-size: medium;
+                    border-radius: 4px;
+                    right: 15%;
+                    &:hover{
+                        box-shadow: 0 0 10px 2px nth($list: $colores, $n: 1);
+                    }
+                }
+            }
+            a{
+                .boton-fav{
+                    width: 38px;
+                    height: 38px;
+                    position: fixed;
+                    right: 68px;
+                    top: 6px;
+                }
+            }
+            a{
+                .boton-carr{
+                    position: fixed;
+                    width: 40px;
+                    height: 40px;
+                    right: 28px;
+                    top: 6px;
+                }
+            }
+
+        }
+    }
+}

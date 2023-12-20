@@ -1,0 +1,21 @@
+/* main carrito*/
+main{
+    .carrito{
+        @include estilo-de-fondo(); 
+        .contenido-carrito{
+            background-color: nth($list: $colores, $n: 3);
+            color: nth($list: $colores, $n: 1);
+            border-radius: 10px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            p{
+                font-size: 200%;
+                margin: 0;
+            }
+            .img-carrito-vacio{
+                width: 400px;
+            }
+        }
+    }
+}
