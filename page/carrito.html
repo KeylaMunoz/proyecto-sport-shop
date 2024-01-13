@@ -17,65 +17,221 @@
     <body>
         <header>
             <!-- NAVEGADOR -->
-            <!-- menu hamburguesa -->
             <section>
                 <div>
+                    <a href="../index.html"> 
+                        <img src="../images/logo1.5.png" class="logo" alt="logo">
+                        <img src="../images/logo-circulo-.png" class="boton-logo" alt="logo circulo">
+                    </a>
+                    <!-- Menu hamburguesa -->
                     <input type="checkbox" id="toggle" class="checkbox">
                     <label for="toggle" class="hamburguesa"><img src="../images/menu-hamburguesa.jpg" alt="menu hamburguesa" class="img-hamburguesa"></label>
                     <nav class="menu">
-                        <a href="../index.html"> <img src="../images/logo-3.png" class="logo" class="boton-logo" alt="Logo"></a></li>
                         <ul class="navegador">
                             <li>
-                                <a href="../index.html" class="boton-nav">Inicio</a>
+                                <a href="../index.html" class="boton-nav">Tienda</a>
                             </li>
                             <li>
-                                <a href="./hombre.html" class="boton-nav">Hombre</a>
+                                <a href="./favoritos.html" class="boton-nav">Favoritos</a>
                             </li>
                             <li>
-                                <a href="./mujer.html" class="boton-nav">Mujer</a>
+                                <a href="#" class="boton-nav">Carrito</a>
                             </li>
                             <li>
                                 <a href="./nosotros.html" class="boton-nav">Nosotros</a>
                             </li>
                             <li>
-                                <a href="./contacto.html" class="boton-nav">Contáctanos</a>
+                                <a href="./contacto.html" class="boton-nav" style= "border-right: none;">Contacto</a>
                             </li>
                         </ul>
                     </nav>
-                        <form action="#" id="busqueda" method="post" class="busquedas">
-                            <input class="buscador" type="search" placeholder="¿Que estás buscando?" id="busqueda">
-                        </form>
-                        <a href="./favoritos.html"><img src="../images/heart-removebg-preview.png" class="boton-fav" alt="Acceso a productos favoritos" ></a></li>
-                        <a href="#"><img src="../images/carrito-removebg-preview.png" class="boton-carr" alt="Acceso al carrito"></a></li>
-                </div>
+                    </div>
             </section>
         </header>
 
         <!-- MAIN CARRITO -->
         <main>
             <section class="carrito">        
-                <div class="contenido-carrito">
-                    <h1> ¡Ay no!</h1>   
-                    <p>Todavía no tienes productos en tu carrito.</p>
-                    <img src="../images/carrito_vacio_nuevo.png" alt="Carrito vacio" class="img-carrito-vacio" >
+                <h1>¡Todavía no tienes productos en tu carrito!</h1>
+                <h2>No te pierdas estos <strong class="resaltado">descuentos</strong> para vos:</h2>   
+                <div class="slider">
+                    <div class="slider-container">
+                        <!-- card 1 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-h-blanca2.jpg" alt="remera blanca para varon" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera BEARFIT blaca</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="ropa-card">
+                            <img src="../images/conjunto-gris.webp" alt="conjunto top y calza larga gris" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto largo gris </p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-h-negra2.jpg" alt="remera negra para varon" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera BEARFIT negra</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="ropa-card">
+                            <img src="../images/conjunto-rosa.webp" alt="top y calza larga rosa" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto largo rosa</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-h-gris.jpg" alt="remera gris para varon" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera BEARFIT gris</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="ropa-card">
+                            <img src="../images/biker-gris-oscuro.jpg" alt="conjunto top y calza gris" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto gris oscuro</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-m-reebok-azul.jpg" alt="remera blanca para mujer" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera REEBOK mujer</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="ropa-card">
+                            <img src="../images/biker-rosa.jpg" alt="top y calza rosa" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto rosa chicle </p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- card 1 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-h-blanca2.jpg" alt="remera blanca para varon" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera BEARFIT blaca</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="ropa-card">
+                            <img src="../images/conjunto-gris.webp" alt="conjunto top y calza larga gris" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto largo gris </p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-h-negra2.jpg" alt="remera negra para varon" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera BEARFIT negra</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="ropa-card">
+                            <img src="../images/conjunto-rosa.webp" alt="top y calza larga rosa" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto largo rosa</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-h-gris.jpg" alt="remera gris para varon" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera BEARFIT gris</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="ropa-card">
+                            <img src="../images/biker-gris-oscuro.jpg" alt="conjunto top y calza gris" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto gris oscuro</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="ropa-card">
+                            <img src="../images/reme-m-reebok-azul.jpg" alt="remera blanca para mujer" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Remera REEBOK mujer</p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="ropa-card">
+                            <img src="../images/biker-rosa.jpg" alt="top y calza rosa" class="tamaño-img">
+                            <div class="info-card">
+                                <p class="nombre-producto">Conjunto rosa chicle </p>
+                                <p class="precio"> 20% DESCUENTO </p>
+                                <a href="#" class="agregar-carrito" id="">Agregar al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>    
         </main>
-         <!-- FOOTER -->
-         <footer>
-            <div>
-                <ul class="footer">
-                    <li>
-                        <a href="https://www.whatsapp.com/?lang=es_LA" class="margin" target="_blank"><img src="../images/whatsapp.png" alt="link whatsapp" class="img-footer"></a></li>
-                    <li>
-                        <a href="https://www.instagram.com/" class="margin" target="_blank"><img src="../images/instagram.png" alt="link instagram" class="img-footer"></a></li>
-                    <li>
-                        <a href="http://www.facebook.com" class="margin" target="_blank"><img src="../images/facebook2.png" alt="link facebook" class="img-footer"></a></li>
-                    <li>
-                        <a href="#" class="margin"><img src="../images/llamada.png" alt="link llamadas" class="img-footer"></a></li>
-                </ul>
+ <!-- FOOTER -->
+ <footer>
+    <div class="footer">
+        <div class="p1-footer">
+            <p class="p">Contáctanos</p>
+            <div class="p1">
+                <p><strong>Celular</strong> +54 9 (381) 345532</p>
+                <p><strong>Email</strong> sportshop@gmail.com</p>
             </div>
-        </footer>
+        </div>
+        <div class="p2-footer">
+            <p class="p">Síguenos</p>
+            <div class="p2">
+                <a href="http://www.facebook.com"> <img src="../images/face.png" alt="link a facebook"></a>
+                <a href="https://www.instagram.com/"> <img src="../images/insta.png" alt="link a instagram"></a>
+                <a href="https://twitter.com/?lang=es"> <img src="../images/twitt.png" alt="link a twitter"></a>
+            </div>
+        </div>
+        <div class="p3-footer">   
+            <p class="p">Información general</p>
+            <div class="p3">
+                <p>&copy; 2024 Sport Shop. Todos los derechos reservados.</p>
+                <p>Última actualización: 5 de enero de 2024</p>
+                <p>Versión 1.0.0</p>
+            </div>
+        </div>
+    </div>
+</footer>
         <!-- link bootstraps js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>

@@ -2,6 +2,7 @@
 @import "utilities/globals";
 @import "utilities/lists";
 @import "utilities/mixin";
+@import "utilities/animation";
 
 @import "components/header";
 @import "components/footer";
@@ -11,7 +12,6 @@
 @import "pages/main-contacto";
 @import "pages/main-carrito";
 @import "pages/main-favoritos";
-@import "pages/main-mujer.scss";
 
 @import "utilities/media_queries";
 

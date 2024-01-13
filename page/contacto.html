@@ -5,127 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="¡Contactanos! Comunicate con Sport Shop por cualquier consulta o asistencia relacionada con nuestros productos deportivos. Estamos aquí para brindarte asesoramiento sobre nuestros productos y atender tus comentarios. Completa el formulario para ponerte en contacto con nuestro equipo.">
     <meta name="keywords" content="contacto, ayuda, asistencia, asesoramiento">
-    <title>Contacto</title>
     <link rel="shortcut icon" href="../images/logo-transp.png" type="image/x-icon">
-
-<!-- link bootstraps css -->
+    
+    <!-- link bootstraps css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<!-- link CSS -->
+    <!-- link CSS -->
     <link rel="stylesheet" href="../css/main.css">
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contacto</title>
+        
 
 </head>
 <body>
     <header>
         <!-- NAVEGADOR -->
-        <!-- menu hamburguesa Boostraps -->
         <section>
             <div>
+                <a href="../index.html"> 
+                    <img src="../images/logo1.5.png" class="logo" alt="logo">
+                    <img src="../images/logo-circulo-.png" class="boton-logo" alt="logo circulo">
+                </a>
+                <!-- Menu hamburguesa -->
                 <input type="checkbox" id="toggle" class="checkbox">
                 <label for="toggle" class="hamburguesa"><img src="../images/menu-hamburguesa.jpg" alt="menu hamburguesa" class="img-hamburguesa"></label>
                 <nav class="menu">
-                    <a href="../index.html"> <img src="../images/logo-3.png" class="logo" class="boton-logo" alt="Logo"></a></li>
                     <ul class="navegador">
                         <li>
-                            <a href="../index.html" class="boton-nav">Inicio</a>
+                            <a href="../index.html" class="boton-nav">Tienda</a>
                         </li>
                         <li>
-                            <a href="./hombre.html" class="boton-nav">Hombre</a>
+                            <a href="./favoritos.html" class="boton-nav">Favoritos</a>
                         </li>
                         <li>
-                            <a href="./mujer.html" class="boton-nav">Mujer</a>
+                            <a href="./carrito.html" class="boton-nav">Carrito</a>
                         </li>
                         <li>
                             <a href="./nosotros.html" class="boton-nav">Nosotros</a>
                         </li>
                         <li>
-                            <a href="#" class="boton-nav">Contáctanos</a>
+                            <a href="#" class="boton-nav" style= "border-right: none;">Contacto</a>
                         </li>
                     </ul>
                 </nav>
-                    <form action="#" id="busqueda" method="post" class="busquedas">
-                        <input class="buscador" type="search" placeholder="¿Que estás buscando?" id="busqueda">
-                    </form>
-                    <a href="./favoritos.html"><img src="../images/heart-removebg-preview.png" class="boton-fav" alt="Acceso a productos favoritos" ></a></li>
-                    <a href="./carrito.html"><img src="../images/carrito-removebg-preview.png" class="boton-carr" alt="Acceso al carrito"></a></li>
-            </div>
+                </div>
         </section>
     </header>
 
     <!-- MAIN CONTACTO -->
     <main>
-        <!-- formulario Bootstraps -->
         <section class="formulario">
+            <h1 class="h1-contacto">¡Comunícate con nosotros!</h1>
             <div class="info-formulario">
-                <form class="row g-3">
-                    <div class="col-md-4">
-                        <label for="validationDefault01" class="form-label">Nombre</label>
-                        <input type="text" class="form-control boton-formulario" id="validationDefault01" value="" required>
+                <form>
+                    <div class="nombre">
+                        <label for="nombre">Nombre y Apellido:</label>
+                        <br>
+                        <input type="text" id="nombre" name="nombre">
                     </div>
-                    <div class="col-md-4">
-                        <label for="validationDefault02" class="form-label">Apellido</label>
-                        <input type="text" class="form-control boton-formulario" id="validationDefault02" value="" required>
-                    </div>
-
                     <div class="correo">
-                        <label for="validationDefault03" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control boton-formulario" id="validationDefault03 " required>
+                        <label for="correo">Correo:</label>
+                        <br>
+                        <input type="email" id="correo" name="correo">
                     </div>
-                    <div class="col-md-3">
-                        <label for="validationDefault04" class="form-label">Provincia</label>
-                        <select class="form-select boton-formulario" id="validationDefault04" required>
-                            <option>Buenos Aires</option>
-                            <option>Catamarca</option>
-                            <option>Chubut</option>
-                            <option>Córdoba</option>
-                            <option>corrientes</option>
-                            <option>Entre Ríos </option>
-                            <option>Formosa</option>
-                            <option>Jujuy</option>
-                            <option>La Pampa</option>
-                            <option>La Rioja</option>
-                            <option>Mendoza</option>
-                            <option>más...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="validationDefault05" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control boton-formulario" id="validationDefault05" required>
+                    <div class="mensaje">
+                        <label for="mensaje">Dejanos tu mensaje:</label>
+                        <br>
+                        <textarea id="mensaje" name="mensaje" rows="3" cols="30"></textarea>
                     </div>
                     <div>
-                        <label for="mensaje">Déjanos tu mensaje aquí:</label>
-                        <br>
-                        <textarea id="mensaje" name="mensaje" rows="" cols=""></textarea>
+                        <input  type="checkbox" id="gridCheck">
+                        <label  for="gridCheck"> Guardar datos. </label>
                     </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                           <label class="form-check-label" for="gridCheck">Guardar datos. </label>
-                           </div>
-                    </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary enviar-formulario">Enviar</button>
+                    <div>
+                        <button type="submit" class="enviar-formulario">Enviar</button>
                     </div>
                 </form>
+                <div class="contacto-redes">
+                    <h2><strong class="resaltado">Ingresá!</strong> Podes seguirnos y mantenernos en contacto:</h2>
+                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <img src="../images/logo-linkwhatsapp.png" alt="contacto de whatsapp" class="link-w" data-aos="fade-left"></a>
+                    <a href="https://www.instagram.com/" target="_blank"> <img src="../images/logo-linkinstagram.png" alt="link a instagram" class="link-i" data-aos="fade-left"></a>
+                    <a href="http://www.facebook.com" target="_blank"> <img src="../images/logo-linkfacebook.png" alt="link a facebook" class="link-f" data-aos="fade-left"></a>
+                 </div>
             </div>
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <div>
-            <ul class="footer">
-                <li>
-                    <a href="https://www.whatsapp.com/?lang=es_LA" class="margin" target="_blank"><img src="../images/whatsapp.png" alt="link whatsapp" class="img-footer"></a></li>
-                <li>
-                    <a href="https://www.instagram.com/" class="margin" target="_blank"><img src="../images/instagram.png" alt="link instagram" class="img-footer"></a></li>
-                <li>
-                    <a href="http://www.facebook.com" class="margin" target="_blank"><img src="../images/facebook2.png" alt="link facebook" class="img-footer"></a></li>
-                <li>
-                    <a href="#" class="margin"><img src="../images/llamada.png" alt="link llamadas" class="img-footer"></a></li>
-            </ul>
+        <div class="footer">
+            <div class="p1-footer">
+                <p class="p">Contáctanos</p>
+                <div class="p1">
+                    <p><strong>Celular</strong> +54 9 (381) 345532</p>
+                    <p><strong>Email</strong> sportshop@gmail.com</p>
+                </div>
+            </div>
+            <div class="p2-footer">
+                <p class="p">Síguenos</p>
+                <div class="p2">
+                    <a href="http://www.facebook.com"> <img src="../images/face.png" alt="link a facebook"></a>
+                    <a href="https://www.instagram.com/"> <img src="../images/insta.png" alt="link a instagram"></a>
+                    <a href="https://twitter.com/?lang=es"> <img src="../images/twitt.png" alt="link a twitter"></a>
+                </div>
+            </div>
+            <div class="p3-footer">   
+                <p class="p">Información general</p>
+                <div class="p3">
+                    <p>&copy; 2024 Sport Shop. Todos los derechos reservados.</p>
+                    <p>Última actualización: 5 de enero de 2024</p>
+                    <p>Versión 1.0.0</p>
+                </div>
+            </div>
         </div>
     </footer>
     <!-- link bootstraps js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- link AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

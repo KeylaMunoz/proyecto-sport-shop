@@ -1,20 +1,70 @@
 /* main carrito*/
 main{
     .carrito{
-        @include estilo-de-fondo(); 
-        .contenido-carrito{
-            background-color: nth($list: $colores, $n: 3);
-            color: nth($list: $colores, $n: 1);
-            border-radius: 10px;
-            width: 100%;
-            padding: 30px;
-            text-align: center;
-            p{
-                font-size: 200%;
-                margin: 0;
+        h1{
+            @include h1;
+            margin-bottom: 2vw;
+        }
+        h2{
+            .resaltado{
+                @include resaltado;
             }
-            .img-carrito-vacio{
-                width: 400px;
+        }
+        .slider {
+            width: 80%;
+            height: auto;
+            margin: auto;
+            overflow: hidden;
+            .slider-container {
+                display: flex;
+                animation-name: slider;
+                animation-duration: 60s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                width: calc(200px * 16);
+                .ropa-card{
+                    background-color: nth($list: $colores, $n: 1);
+                    width: 182px;
+                    height: 260px;
+                    border-radius: 4%;
+                    overflow: hidden;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    margin: 4vw 1vw;
+                    cursor: pointer;
+                    border: 2px solid green;
+                    .tamaño-img{
+                        width: 100%;
+                        overflow: hidden;
+                    }
+                    .info-card{
+                        position: relative;
+                        .nombre-producto{
+                            font-size: medium;
+                            margin: 0;
+                        }
+                        .precio{
+                            font-weight: 600;
+                            color: green;
+                            font-size: medium;
+                            margin: 0;
+                        }
+                        .agregar-carrito{
+                            position: relative;
+                            text-decoration: none;
+                            font-size: small;
+                            background-color: transparent;
+                            color: nth($list: $colores, $n: 2);
+                            border: 1.5px solid nth($list: $colores, $n: 2);
+                            border-radius: 5px;
+                            padding: 0.3vw;
+                            &:hover{
+                                background-color: nth($list: $colores, $n: 2);
+                                color: nth($list: $colores, $n: 1);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

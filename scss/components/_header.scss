@@ -2,11 +2,31 @@
 header {
     section{
         div{
-            background-color: nth($list: $colores, $n: 3);
+            background-color: #d6d6d6;
+            background-image: linear-gradient(180deg, #d6d6d6 0%, #929292 100%);
             width: 100%;
-            height: 48px;
-            position: fixed;
+            height: 70px;
+            position:fixed;
             z-index: 4;
+            a{
+                .logo{
+                    position: fixed;
+                    width: 110px;
+                    height: 50px;
+                    left:1.5vw;
+                    top: 10px;
+                    border-radius: 30px;
+                    overflow: hidden;
+                    &:hover{
+                        width: 113px;
+                        height: 53px;
+                        top: 9px;
+                    }
+                }
+                .boton-logo{
+                    display: none;
+                }                   
+            }
             .checkbox{
                 position: fixed;
                 width: 20px;
@@ -18,55 +38,43 @@ header {
             display: none;
             }
             .menu{
-                a{
-                    .logo{
-                        position: fixed;
-                        width: 65px;
-                        left:1vw;
-                        top: 8px;
-                        border-radius: 4px;
-                        overflow: hidden;
-                    }                   
-                }
                 .navegador{
                     display: flex;
                     position: absolute;
                     z-index: 5;
                     list-style: none;
-                    margin-left: 6%;
-                    margin-top: 12px;
+                    margin-top: 21px;
+                    margin-left: 23vw;
+                    padding-left: 0;
 
                     li{
                         .boton-nav{
                             text-decoration: none;
-                            padding: 0.5vw 1vw 0.5vw 1vw;
-                            font-size: medium;
-                            color: nth($list: $colores, $n: 1);                       
-                            &:hover{
-                                border-radius: 4px;
-                                box-shadow: 0 0 10px 2px nth($list: $colores, $n: 1);
+                            padding: 0.5vw 3vw 0.5vw 1vw;
+                            font-size: large;
+                            font-weight: 600;
+                            color: nth($list: $colores, $n: 1); 
+                            margin-right: 2vw; 
+                            border-right: 1px solid #f9f8f8;  
+                            position: relative; 
+                            overflow: hidden;                    
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 1px;
+                                background-color: #fff; 
+                                transform: scaleX(0); 
+                                transition: transform 0.3s ease-out; 
+                                transform-origin: left;
                             }
-                        }
-                    }
-                }
-            }
-            .busquedas{
-                .buscador{
-                    background-color: nth($list: $colores, $n: 1);
-                    color: black;
-                    width: 25%;
-                    height: 35px;
-                    display: flex;
-                    justify-content: center;
-                    border: none;
-                    text-align: center;
-                    position: fixed;
-                    top: 6px;
-                    font-size: medium;
-                    border-radius: 4px;
-                    right: 15%;
-                    &:hover{
-                        box-shadow: 0 0 10px 2px nth($list: $colores, $n: 1);
+                            &:hover::before {
+                                box-shadow: 0 0 10px 2px nth($list: $colores, $n: 1);
+                                transform: scaleX(0.8);
+                            }                        
+                        } 
                     }
                 }
             }
